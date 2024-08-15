@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0083D782C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0083D772C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift */; };
 		F07758F92C6E99CE00654783 /* JustASegueAndUnwind1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07758F82C6E99CE00654783 /* JustASegueAndUnwind1App.swift */; };
 		F07758FB2C6E99CE00654783 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07758FA2C6E99CE00654783 /* ContentView.swift */; };
 		F07758FD2C6E99CF00654783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07758FC2C6E99CF00654783 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F0083D772C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustASegueAndUnwind1AppGlobalInfo.swift; sourceTree = "<group>"; };
 		F07758F52C6E99CE00654783 /* JustASegueAndUnwind1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustASegueAndUnwind1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07758F82C6E99CE00654783 /* JustASegueAndUnwind1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustASegueAndUnwind1App.swift; sourceTree = "<group>"; };
 		F07758FA2C6E99CE00654783 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		F07758F72C6E99CE00654783 /* JustASegueAndUnwind1 */ = {
 			isa = PBXGroup;
 			children = (
+				F0083D772C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift */,
 				F07758FC2C6E99CF00654783 /* Assets.xcassets */,
 				F07758FA2C6E99CE00654783 /* ContentView.swift */,
 				F07758F82C6E99CE00654783 /* JustASegueAndUnwind1App.swift */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0083D782C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift in Sources */,
 				F07758FB2C6E99CE00654783 /* ContentView.swift in Sources */,
 				F07758F92C6E99CE00654783 /* JustASegueAndUnwind1App.swift in Sources */,
 			);
@@ -270,7 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 01.01.24C228;
+				CURRENT_PROJECT_VERSION = 01.04.24C228;
 				DEVELOPMENT_ASSET_PATHS = "\"JustASegueAndUnwind1/Preview Content\"";
 				DEVELOPMENT_TEAM = J434W9VGHF;
 				ENABLE_PREVIEWS = YES;
@@ -300,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 01.01.24C228;
+				CURRENT_PROJECT_VERSION = 01.04.24C228;
 				DEVELOPMENT_ASSET_PATHS = "\"JustASegueAndUnwind1/Preview Content\"";
 				DEVELOPMENT_TEAM = J434W9VGHF;
 				ENABLE_PREVIEWS = YES;

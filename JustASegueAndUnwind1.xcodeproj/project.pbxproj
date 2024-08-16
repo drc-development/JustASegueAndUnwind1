@@ -13,6 +13,8 @@
 		F07758FB2C6E99CE00654783 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07758FA2C6E99CE00654783 /* ContentView.swift */; };
 		F07758FD2C6E99CF00654783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07758FC2C6E99CF00654783 /* Assets.xcassets */; };
 		F07759002C6E99CF00654783 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07758FF2C6E99CF00654783 /* Preview Assets.xcassets */; };
+		F0A4BA532C6F9D32001144CF /* LandingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A4BA522C6F9D32001144CF /* LandingPageController.swift */; };
+		F0A4BA552C6F9D51001144CF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A4BA542C6F9D51001144CF /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		F07758FA2C6E99CE00654783 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F07758FC2C6E99CF00654783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F07758FF2C6E99CF00654783 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0A4BA522C6F9D32001144CF /* LandingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageController.swift; sourceTree = "<group>"; };
+		F0A4BA542C6F9D51001144CF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		F07758F72C6E99CE00654783 /* JustASegueAndUnwind1 */ = {
 			isa = PBXGroup;
 			children = (
-				F0083D772C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift */,
 				F07758FC2C6E99CF00654783 /* Assets.xcassets */,
 				F07758FA2C6E99CE00654783 /* ContentView.swift */,
+				F0A4BA542C6F9D51001144CF /* FirstViewController.swift */,
 				F07758F82C6E99CE00654783 /* JustASegueAndUnwind1App.swift */,
-				F07758FE2C6E99CF00654783 /* Preview Content */,
+				F0083D772C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift */,
+				F0A4BA522C6F9D32001144CF /* LandingPageController.swift */,
 				F0083D792C6EA3CA0081AD15 /* Main.storyboard */,
+				F07758FE2C6E99CF00654783 /* Preview Content */,
 			);
 			path = JustASegueAndUnwind1;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A4BA552C6F9D51001144CF /* FirstViewController.swift in Sources */,
+				F0A4BA532C6F9D32001144CF /* LandingPageController.swift in Sources */,
 				F0083D782C6EA0BE0081AD15 /* JustASegueAndUnwind1AppGlobalInfo.swift in Sources */,
 				F07758FB2C6E99CE00654783 /* ContentView.swift in Sources */,
 				F07758F92C6E99CE00654783 /* JustASegueAndUnwind1App.swift in Sources */,
@@ -278,12 +286,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 01.04.24C228;
+				CURRENT_PROJECT_VERSION = 02.01.24C229;
 				DEVELOPMENT_ASSET_PATHS = "\"JustASegueAndUnwind1/Preview Content\"";
 				DEVELOPMENT_TEAM = J434W9VGHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = JustASegueAndUnwind1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,12 +317,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 01.04.24C228;
+				CURRENT_PROJECT_VERSION = 02.01.24C229;
 				DEVELOPMENT_ASSET_PATHS = "\"JustASegueAndUnwind1/Preview Content\"";
 				DEVELOPMENT_TEAM = J434W9VGHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = JustASegueAndUnwind1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

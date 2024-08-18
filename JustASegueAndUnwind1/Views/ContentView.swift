@@ -15,7 +15,7 @@ struct ContentView: View
     {
         
         static let sClsId        = "ContentView"
-        static let sClsVers      = "v1.0103"
+        static let sClsVers      = "v1.0201"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -31,18 +31,6 @@ struct ContentView: View
     {
 
         let _ = xcgLogMsg("\(ClassInfo.sClsDisp):body(some View) \(ClassInfo.sClsCopyRight)...")
-
-//        VStack 
-//        {
-//
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//
-//            Text("Hello, world!")
-//
-//        }
-//        .padding()
 
         NavigationStack
         {
@@ -125,7 +113,6 @@ struct ContentView: View
                     VStack(alignment:.center)
                     {
                         
-                    //  Text("\(ClassInfo.sClsCopyRight)")
                         Text("\(AppGlobalInfo.sGlobalInfoAppCopyRight)")
                             .italic()
                             .controlSize(.mini)

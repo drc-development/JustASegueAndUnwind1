@@ -37,7 +37,7 @@ class LandingPageViewController: UIViewController
         
     }   // End of override func prepare(for segue:, sender:).
     
-    //To Perform Unwind Seque:
+    // To Perform 'unwind' Seque:
     
     @IBAction func performUnwindSegueOperation(_ sender:UIStoryboardSegue)
     {

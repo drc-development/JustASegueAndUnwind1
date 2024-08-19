@@ -16,7 +16,7 @@ class FirstViewController: UIViewController
     {
         
         static let sClsId        = "FirstViewController"
-        static let sClsVers      = "v1.0301"
+        static let sClsVers      = "v1.0302"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -54,6 +54,27 @@ class FirstViewController: UIViewController
         return
         
     }   // End of viewDidLoad().
+    
+    override func viewDidDisappear(_ animated: Bool) 
+    {
+        
+        let sCurrMethod:String = #function
+        let sCurrMethodDisp    = "'"+sCurrMethod+"'"
+
+        self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Invoked...")
+        
+        DispatchQueue.main.async
+        {
+            self.textFieldLastName.resignFirstResponder()
+        }
+        
+        // Exit...
+
+        self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Exiting...")
+
+        return
+        
+    }    // End of override func viewDidDisappear(_ animated:).
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) 
     {

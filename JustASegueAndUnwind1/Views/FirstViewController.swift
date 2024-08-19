@@ -16,7 +16,7 @@ class FirstViewController: UIViewController
     {
         
         static let sClsId        = "FirstViewController"
-        static let sClsVers      = "v1.0203"
+        static let sClsVers      = "v1.0301"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -38,6 +38,11 @@ class FirstViewController: UIViewController
         super.viewDidLoad()
         
         self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Invoked...")
+        
+        DispatchQueue.main.async 
+        {
+            self.textFieldLastName.becomeFirstResponder()
+        }
         
         let sFirstname:String    = "Firstmame: \(self.firstname ?? "")"
         self.labelFirstName.text = sFirstname

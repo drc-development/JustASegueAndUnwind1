@@ -16,7 +16,7 @@ class LandingPageViewController: UIViewController
     {
         
         static let sClsId        = "LandingPageViewController"
-        static let sClsVers      = "v1.0203"
+        static let sClsVers      = "v1.0303"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -29,6 +29,33 @@ class LandingPageViewController: UIViewController
     
     public var fullname:String? = nil
     
+    override func viewDidLoad() 
+    {
+        
+        let sCurrMethod:String = #function
+        let sCurrMethodDisp    = "'"+sCurrMethod+"'"
+
+        super.viewDidLoad()
+        
+        self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Invoked...")
+        
+        DispatchQueue.main.async 
+        {
+            self.textFieldFirstName.becomeFirstResponder()
+        }
+        
+    //  let sFirstname:String    = "Firstmame: \(self.firstname ?? "")"
+    //  self.labelFirstName.text = sFirstname
+
+        // Exit...
+
+    //  self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Exiting - 'sFirstname' is [\(sFirstname)]...")
+        self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Exiting...")
+
+        return
+        
+    }   // End of viewDidLoad().
+    
     override func viewWillAppear(_ animated: Bool) 
     {
         
@@ -36,6 +63,11 @@ class LandingPageViewController: UIViewController
         let sCurrMethodDisp    = "'"+sCurrMethod+"'"
 
         self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Invoked...")
+        
+        DispatchQueue.main.async
+        {
+            self.textFieldFirstName.becomeFirstResponder()
+        }
         
         guard let fullname = fullname
         else { return }

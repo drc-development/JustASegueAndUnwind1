@@ -16,7 +16,7 @@ class LandingPageViewController: UIViewController
     {
         
         static let sClsId        = "LandingPageViewController"
-        static let sClsVers      = "v1.0201"
+        static let sClsVers      = "v1.0203"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -27,7 +27,7 @@ class LandingPageViewController: UIViewController
     @IBOutlet weak var textFieldFirstName:UITextField!
     @IBOutlet weak var labelFullname:UILabel!
     
-    var fullname:String? = nil
+    public var fullname:String? = nil
     
     override func viewWillAppear(_ animated: Bool) 
     {
@@ -103,6 +103,8 @@ class LandingPageViewController: UIViewController
 
     //  self.appDelegate.xcgLogMsg("\(sMessage)")
         print("\(sMessage)")
+
+        // Exit...
 
         return
 

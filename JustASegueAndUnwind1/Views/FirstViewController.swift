@@ -16,7 +16,7 @@ class FirstViewController: UIViewController
     {
         
         static let sClsId        = "FirstViewController"
-        static let sClsVers      = "v1.0201"
+        static let sClsVers      = "v1.0203"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -27,7 +27,7 @@ class FirstViewController: UIViewController
     @IBOutlet weak var textFieldLastName:UITextField!
     @IBOutlet weak var labelFirstName:UILabel!
     
-    var firstname:String? = nil
+    public var firstname:String? = nil
     
     override func viewDidLoad() 
     {
@@ -39,8 +39,8 @@ class FirstViewController: UIViewController
         
         self.xcgLogMsg("\(ClassInfo.sClsDisp)\(sCurrMethodDisp) Invoked...")
         
-        let sFirstname:String = "Firstmame: \(self.firstname ?? "")"
-        labelFirstName.text   = sFirstname
+        let sFirstname:String    = "Firstmame: \(self.firstname ?? "")"
+        self.labelFirstName.text = sFirstname
 
         // Exit...
 
@@ -62,7 +62,7 @@ class FirstViewController: UIViewController
 
         var sFullname:String = ""
         
-        if let firstname = firstname, let lastname = textFieldLastName.text
+        if let firstname = self.firstname, let lastname = self.textFieldLastName.text
         {
             
             sFullname          = "\(firstname) \(lastname)"
@@ -83,6 +83,8 @@ class FirstViewController: UIViewController
 
     //  self.appDelegate.xcgLogMsg("\(sMessage)")
         print("\(sMessage)")
+
+        // Exit...
 
         return
 

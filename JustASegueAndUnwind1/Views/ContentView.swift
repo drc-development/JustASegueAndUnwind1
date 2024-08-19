@@ -15,7 +15,7 @@ struct ContentView: View
     {
         
         static let sClsId        = "ContentView"
-        static let sClsVers      = "v1.0201"
+        static let sClsVers      = "v1.0207"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -25,8 +25,9 @@ struct ContentView: View
 
     // App Data field(s):
     
-    @State private var cContentViewRefreshButtonPresses:Int = 0
-    
+//  @State private var cContentViewNextStoryboardButtonPresses:Int = 0
+    @State private var cContentViewRefreshButtonPresses:Int        = 0
+
     var body: some View 
     {
 
@@ -40,10 +41,22 @@ struct ContentView: View
             VStack(alignment:.center) 
             {
                 
-                Spacer()
-
                 HStack
                 {
+
+                    Spacer()
+
+                    NavigationLink(destination: ForwardStoryboardVCRepresentable())
+                    {
+
+                        let _ = xcgLogMsg("\(ClassInfo.sClsDisp)ContentView in NavigationLink(Xcode).'Next Storyboard - InitialView'...")
+
+                        Text("To Storyboard #2 ->")
+                            .dynamicTypeSize(.xxLarge)
+                            .background(.blue)
+                            .foregroundStyle(.white)
+                        
+                    }
 
                     Spacer()
 
@@ -55,7 +68,7 @@ struct ContentView: View
                         let _ = xcgLogMsg("\(ClassInfo.sClsDisp)ContentView in Button(Xcode).'Refresh'.#(\(self.cContentViewRefreshButtonPresses))...")
 
                     }
-                    .controlSize(.large)
+                    .controlSize(.regular)
                     .background(Color(red: 0, green: 0.5, blue: 0.5))
                     .foregroundStyle(.white)
                     .buttonStyle(.borderedProminent)
@@ -125,6 +138,7 @@ struct ContentView: View
 
             }
             .navigationTitle("\(AppGlobalInfo.sGlobalInfoAppId)")
+            .navigationBarTitleDisplayMode(.inline)
             // ------------------------------------------------------------------------------------------------------
             // >>> This does work (the .toolbar() MUST be under a NavigationStack:
             // ------------------------------------------------------------------------------------------------------
@@ -173,6 +187,8 @@ struct ContentView: View
 
     //  self.appDelegate.xcgLogMsg("\(sMessage)")
         print("\(sMessage)")
+
+        // Exit:
 
         return
 

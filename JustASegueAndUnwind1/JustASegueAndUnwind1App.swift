@@ -16,7 +16,7 @@ struct JustASegueAndUnwind1App: App
     {
         
         static let sClsId        = "JustASegueAndUnwind1App"
-        static let sClsVers      = "v1.0101"
+        static let sClsVers      = "v1.0102"
         static let sClsDisp      = sClsId+"(.swift).("+sClsVers+"):"
         static let sClsCopyRight = "Copyright (C) JustMacApps 2023-2024. All Rights Reserved."
         static let bClsTrace     = true
@@ -55,6 +55,8 @@ struct JustASegueAndUnwind1App: App
 
     //  self.appDelegate.xcgLogMsg("\(sMessage)")
         print("\(sMessage)")
+
+        // Exit...
 
         return
 
